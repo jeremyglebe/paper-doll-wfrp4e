@@ -1,0 +1,39 @@
+name: Release Module
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out public module repository
+        uses: actions/checkout@v4
+
+      - name: Validate module files
+        run: |
+          test -f module.json
+          test -d scripts
+          test -d styles
+
+      - name: Create module zip
+        run: |
+          zip -r module.zip . \
+            -x module.zip \
+            -x ".git/*" \
+            -x ".github/*"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            module.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
