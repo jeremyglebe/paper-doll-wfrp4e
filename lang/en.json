@@ -1,0 +1,21 @@
+{
+  "PAPER_DOLL_WFRP4E": {
+    "Preview": {
+      "Title": "Paper Doll - WFRP4e"
+    },
+    "SlotTooltip": {
+      "Head": "Head armour",
+      "Cape": "Aesthetic Item",
+      "Body": "Body armour",
+      "Gloves": "Arm armour",
+      "Boots": "Leg armour",
+      "Trinket": "Ready Item",
+      "Pendant": "Amulet",
+      "Ring": "Worn Item",
+      "WristLeft": "Light Source",
+      "WristRight": "Quick Use Item",
+      "MainLeft": "Main hand",
+      "MainRight": "Off hand"
+    }
+  }
+}

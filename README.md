@@ -16,7 +16,7 @@ return a not-found response even though this repository already exists.
 ## Compatibility
 
 - Module ID: `paper-doll-wfrp4e`
-- Current version: `0.0.1`
+- Current version: `0.1.0`
 - Foundry VTT: minimum 14, verified 14
 - Required systems: wfrp4e 9.6.1
 
