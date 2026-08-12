@@ -19,14 +19,16 @@ jobs:
       - name: Validate module files
         run: |
           test -f module.json
-          test -d scripts
-          test -d styles
+          test "$(jq -r .id module.json)" = "paper-doll-wfrp4e"
+          test "$(jq -r .version module.json)" = "${GITHUB_REF_NAME#v}"
 
       - name: Create module zip
         run: |
           zip -r module.zip . \
             -x module.zip \
+            -x ".git" \
             -x ".git/*" \
+            -x ".github" \
             -x ".github/*"
 
       - name: Create GitHub release
