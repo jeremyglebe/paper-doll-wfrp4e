@@ -1,8 +1,8 @@
 {
   "id": "paper-doll-wfrp4e",
   "title": "Paper Doll - WFRP4e — Moved",
-  "description": "Migration package for Paper Doll support now maintained by WFRP4e Compatibility Box.",
-  "version": "1.0.1",
+  "description": "Migration package for Paper Doll support now maintained by Drowsy's WFRP4e Compatibility Box.",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Jeremy Glebe"
@@ -42,5 +42,5 @@
   },
   "manifest": "https://github.com/jeremyglebe/wfrp4e-compatibility-box/releases/latest/download/module.json",
   "url": "https://github.com/jeremyglebe/paper-doll-wfrp4e",
-  "download": "https://github.com/jeremyglebe/paper-doll-wfrp4e/releases/download/v1.0.1/module.zip"
+  "download": "https://github.com/jeremyglebe/paper-doll-wfrp4e/releases/download/v1.0.2/module.zip"
 }
