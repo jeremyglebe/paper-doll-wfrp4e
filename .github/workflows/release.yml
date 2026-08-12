@@ -21,6 +21,8 @@ jobs:
           test -f module.json
           test "$(jq -r .id module.json)" = "paper-doll-wfrp4e"
           test "$(jq -r .version module.json)" = "${GITHUB_REF_NAME#v}"
+          test "$(jq -r .manifest module.json)" = \
+            "https://github.com/jeremyglebe/wfrp4e-compatibility-box/releases/latest/download/module.json"
 
       - name: Create module zip
         run: |
